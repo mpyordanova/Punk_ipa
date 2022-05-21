@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, useState} from 'react'
+import ReactDOM from 'react-dom';
+ // import { Route, Routes} from 'react-router-dom'
+import Header from './components/Header';
+import Home from './components/Home';
+// import axios from 'axios';
 
 function App() {
+  const title = 'Take a pitcher! It will last longer.'
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <div className = 'content'>
+        <Home/>
+        <h1>{title}</h1>
+      </div>
+     
     </div>
   );
 }
