@@ -8,9 +8,10 @@ const Header = () => {
         <div className = 'links'>
           <a href="/">Home</a><br></br>
           <a href="/selection">Beer Selection</a>
+          
         </div>
         </div>
   );
 }
 
-export default Header;
+export default Header
